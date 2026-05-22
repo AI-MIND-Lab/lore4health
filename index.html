@@ -2,85 +2,285 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>LR4Health 2026</title>
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      max-width: 950px;
-      margin: 60px auto;
-      padding: 20px;
+      margin: 0;
+      background-color: #f8fafc;
+      color: #1e293b;
       line-height: 1.7;
-      color: #222;
-      background-color: #ffffff;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      padding: 18px 60px;
+      border-bottom: 1px solid #e2e8f0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin-right: 28px;
+      text-decoration: none;
+      color: #0f172a;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: #0f766e;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 30px;
+    }
+
+    .hero {
+      padding-top: 40px;
+      padding-bottom: 40px;
     }
 
     h1 {
-      font-size: 48px;
+      font-size: 64px;
       margin-bottom: 10px;
       color: #0f172a;
     }
 
-    h2 {
-      font-size: 28px;
-      font-weight: normal;
-      margin-top: 0;
+    .tagline {
+      font-size: 34px;
       color: #334155;
+      margin-bottom: 30px;
+      font-weight: 300;
     }
 
-    h3 {
-      margin-top: 40px;
+    .subtitle {
+      font-size: 22px;
+      font-weight: 600;
       color: #0f172a;
+      margin-bottom: 35px;
+    }
+
+    .notice {
+      background-color: #e2e8f0;
+      padding: 18px 24px;
+      border-left: 6px solid #0f766e;
+      border-radius: 6px;
+      max-width: 800px;
+    }
+
+    section {
+      margin-top: 90px;
+    }
+
+    h2 {
+      font-size: 38px;
+      color: #0f172a;
+      margin-bottom: 20px;
     }
 
     p {
       font-size: 18px;
+      color: #475569;
     }
 
     ul {
       font-size: 18px;
+      color: #475569;
     }
 
-    .subtitle {
-      margin-top: 25px;
-      font-size: 20px;
-      font-weight: bold;
-      color: #0f172a;
-    }
-
-    .notice {
+    .speaker-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
       margin-top: 30px;
-      padding: 15px;
-      background-color: #f1f5f9;
-      border-left: 5px solid #0f172a;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      border: 1px solid #e2e8f0;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #0f172a;
+      font-size: 22px;
+    }
+
+    .card p {
+      font-size: 16px;
+    }
+
+    footer {
+      margin-top: 100px;
+      padding: 40px;
+      text-align: center;
+      color: #64748b;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    .highlight {
+      color: #0f766e;
+      font-weight: 600;
     }
   </style>
 </head>
 
 <body>
 
-  <h1>LR4Health 2026</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#speakers">Speakers</a>
+    <a href="#cfp">Call for Papers</a>
+    <a href="#organizers">Organizers</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <h2>Longitudinal Reasoning Over Evolving Evidence</h2>
+  <div class="container">
 
-  <p class="subtitle">
-    NeurIPS 2026 Workshop on Multimodal Clinical Decision Support and Healthcare AI
-  </p>
+    <section id="home" class="hero">
 
-  <div class="notice">
-    Workshop website under construction.
+      <h1>LR4Health 2026</h1>
+
+      <div class="tagline">
+        Longitudinal Reasoning Over Evolving Evidence
+      </div>
+
+      <div class="subtitle">
+        NeurIPS 2026 Workshop on Multimodal Clinical Decision Support and Healthcare AI
+      </div>
+
+      <div class="notice">
+        Workshop website under construction. Additional details, speakers, submission instructions, and schedule updates will be announced soon.
+      </div>
+
+    </section>
+
+    <section id="about">
+
+      <h2>About</h2>
+
+      <p>
+        LR4Health focuses on longitudinal reasoning systems capable of integrating evolving multimodal clinical evidence across patient trajectories. The workshop brings together researchers working on multimodal reasoning, retrieval-grounded inference, uncertainty-aware clinical AI, deployment challenges, clinician supervision, and trustworthy healthcare AI systems.
+      </p>
+
+      <p>
+        The workshop emphasizes challenges involving temporal reasoning, calibration under distribution shift, evidence attribution, longitudinal decision support, and deployment of multimodal foundation models in real-world healthcare environments.
+      </p>
+
+    </section>
+
+    <section id="speakers">
+
+      <h2>Confirmed Speakers</h2>
+
+      <div class="speaker-grid">
+
+        <div class="card">
+          <h3>Faisal Mahmood</h3>
+          <p>Harvard Medical School</p>
+        </div>
+
+        <div class="card">
+          <h3>Nigam Shah</h3>
+          <p>Stanford University</p>
+        </div>
+
+        <div class="card">
+          <h3>Hoifung Poon</h3>
+          <p>Microsoft Research</p>
+        </div>
+
+        <div class="card">
+          <h3>Greg Corrado</h3>
+          <p>Google Research</p>
+        </div>
+
+        <div class="card">
+          <h3>Finale Doshi-Velez</h3>
+          <p>Harvard University</p>
+        </div>
+
+        <div class="card">
+          <h3>Mihaela van der Schaar</h3>
+          <p>University of Cambridge</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="cfp">
+
+      <h2>Call for Papers</h2>
+
+      <p>
+        We invite submissions on longitudinal clinical reasoning, multimodal healthcare AI, retrieval-grounded inference, temporal reasoning systems, uncertainty-aware clinical decision support, healthcare foundation models, deployment studies, clinician-AI interaction, and trustworthy AI for healthcare.
+      </p>
+
+      <p>
+        Submission instructions and important dates will be announced soon.
+      </p>
+
+    </section>
+
+    <section id="organizers">
+
+      <h2>Workshop Chair</h2>
+
+      <ul>
+        <li><span class="highlight">Pegah Khosravi</span> — University of Central Florida</li>
+      </ul>
+
+      <h2 style="margin-top:50px;">Organizing Committee</h2>
+
+      <ul>
+        <li>Chen Chen — University of Central Florida</li>
+        <li>Chang Xu — The University of Sydney</li>
+        <li>Zongyuan Ge — Monash University</li>
+        <li>Hani Goodarzi — Arc Institute</li>
+        <li>Joseph Paul Cohen — Amazon AWS Health AI</li>
+        <li>Swetha Sirnam — Amazon</li>
+      </ul>
+
+    </section>
+
+    <section id="contact">
+
+      <h2>Contact</h2>
+
+      <p>
+        For workshop inquiries, please contact:
+      </p>
+
+      <p>
+        <span class="highlight">Pegah Khosravi</span><br>
+        University of Central Florida<br>
+        pegah.khosravi@ucf.edu
+      </p>
+
+    </section>
+
+    <footer>
+      LR4Health 2026 • NeurIPS 2026 Workshop
+    </footer>
+
   </div>
-
-  <h3>Organizers</h3>
-
-  <ul>
-    <li>Pegah Khosravi — University of Central Florida</li>
-    <li>Chen Chen — University of Central Florida</li>
-    <li>Chang Xu — The University of Sydney</li>
-    <li>Zongyuan Ge — Monash University</li>
-  </ul>
 
 </body>
 
