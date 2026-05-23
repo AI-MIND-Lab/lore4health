@@ -202,14 +202,15 @@
 
     .schedule-grid {
       display: grid;
-      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+      gap: 18px;
       margin-top: 30px;
     }
     
     .schedule-item {
       display: grid;
-      grid-template-columns: 170px 1fr;
-      gap: 20px;
+      grid-template-columns: 140px 1fr;
+      gap: 18px;
       align-items: center;
       background: white;
       border-left: 6px solid #0f766e;
@@ -229,6 +230,30 @@
       font-size: 17px;
       color: #0f172a;
       font-weight: 600;
+    }
+
+    .schedule-opening {
+  border-left-color: #0f766e;
+    }
+    
+    .schedule-keynote {
+      border-left-color: #0f766e;
+    }
+    
+    .schedule-break {
+      border-left-color: #94a3b8;
+    }
+    
+    .schedule-panel {
+      border-left-color: #2563eb;
+    }
+    
+    .schedule-poster {
+      border-left-color: #7c3aed;
+    }
+    
+    .schedule-closing {
+      border-left-color: #ea580c;
     }
     
     footer {
@@ -304,6 +329,7 @@
     <a href="#about">About</a>
     <a href="#speakers">Speakers</a>
     <a href="#cfp">Call for Papers</a>
+    <a href="#schedule">Schedule</a>
     <a href="#organizers">Organizers</a>
     <a href="#committee">Committee</a>
     <a href="#contact">Contact</a>
@@ -459,61 +485,68 @@
     </section>
 
     <section id="schedule">
-      <h2>Tentative Schedule</h2>
-      <p>The workshop will include keynote talks, spotlight presentations, panel discussions, demonstrations, poster sessions, and interactive discussions. The schedule is tentative and may be updated.</p>
-    
-      <div class="schedule-grid">
-        <div class="schedule-item">
-          <div class="schedule-time">8:30 AM – 8:40 AM</div>
-          <div class="schedule-event">Opening Remarks</div>
-        </div>
-    
-        <div class="schedule-item">
-          <div class="schedule-time">8:40 AM – 10:10 AM</div>
-          <div class="schedule-event">Keynote Talks and Spotlight Session I</div>
-        </div>
-    
-        <div class="schedule-item">
-          <div class="schedule-time">10:10 AM – 10:30 AM</div>
-          <div class="schedule-event">Break</div>
-        </div>
-    
-        <div class="schedule-item">
-          <div class="schedule-time">10:30 AM – 12:00 PM</div>
-          <div class="schedule-event">Keynote Talks and Spotlight Session II</div>
-        </div>
-    
-        <div class="schedule-item">
-          <div class="schedule-time">12:00 PM – 1:00 PM</div>
-          <div class="schedule-event">Lunch Break</div>
-        </div>
-    
-        <div class="schedule-item">
-          <div class="schedule-time">1:00 PM – 2:00 PM</div>
-          <div class="schedule-event">Panel Discussion</div>
-        </div>
+  <h2>Tentative Schedule</h2>
 
-        <div class="schedule-item">
-          <div class="schedule-time">2:00 PM – 2:15 PM</div>
-          <div class="schedule-event">Break</div>
-        </div>  
-    
-        <div class="schedule-item">
-          <div class="schedule-time">2:15 PM – 3:30 PM</div>
-          <div class="schedule-event">Keynote Talks and Benchmark Discussion</div>
-        </div>
-    
-        <div class="schedule-item">
-          <div class="schedule-time">3:30 PM – 5:00 PM</div>
-          <div class="schedule-event">Poster Session and Networking</div>
-        </div>
-    
-        <div class="schedule-item">
-          <div class="schedule-time">5:00 PM – 5:30 PM</div>
-          <div class="schedule-event">Closing Discussion and Remarks</div>
-        </div>
-      </div>
-    </section>
+  <p>
+    The workshop will include keynote talks, spotlight presentations,
+    panel discussions, demonstrations, poster sessions, and interactive
+    discussions. The schedule is tentative and may be updated.
+  </p>
+
+  <div class="schedule-grid">
+
+    <div class="schedule-item schedule-opening">
+      <div class="schedule-time">👋 8:30 AM – 8:40 AM</div>
+      <div class="schedule-event">Opening Remarks</div>
+    </div>
+
+    <div class="schedule-item schedule-keynote">
+      <div class="schedule-time">🎤 8:40 AM – 10:10 AM</div>
+      <div class="schedule-event">Keynote Talks and Spotlight Session I</div>
+    </div>
+
+    <div class="schedule-item schedule-break">
+      <div class="schedule-time">☕ 10:10 AM – 10:30 AM</div>
+      <div class="schedule-event">Break</div>
+    </div>
+
+    <div class="schedule-item schedule-keynote">
+      <div class="schedule-time">🎤 10:30 AM – 12:00 PM</div>
+      <div class="schedule-event">Keynote Talks and Spotlight Session II</div>
+    </div>
+
+    <div class="schedule-item schedule-break">
+      <div class="schedule-time">🍽️ 12:00 PM – 1:00 PM</div>
+      <div class="schedule-event">Lunch Break</div>
+    </div>
+
+    <div class="schedule-item schedule-panel">
+      <div class="schedule-time">🧠 1:00 PM – 2:00 PM</div>
+      <div class="schedule-event">Panel Discussion</div>
+    </div>
+
+    <div class="schedule-item schedule-break">
+      <div class="schedule-time">☕ 2:00 PM – 2:15 PM</div>
+      <div class="schedule-event">Break</div>
+    </div>
+
+    <div class="schedule-item schedule-keynote">
+      <div class="schedule-time">📊 2:15 PM – 3:30 PM</div>
+      <div class="schedule-event">Keynote Talks and Benchmark Discussion</div>
+    </div>
+
+    <div class="schedule-item schedule-poster">
+      <div class="schedule-time">📌 3:30 PM – 5:00 PM</div>
+      <div class="schedule-event">Poster Session and Networking</div>
+    </div>
+
+    <div class="schedule-item schedule-closing">
+      <div class="schedule-time">✨ 5:00 PM – 5:30 PM</div>
+      <div class="schedule-event">Closing Discussion and Remarks</div>
+    </div>
+
+  </div>
+</section>
 
 <section id="organizers">
   <h2>Organizers</h2>
