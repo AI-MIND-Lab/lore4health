@@ -4,13 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>LR4Health 2026</title>
 
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: Arial, sans-serif;
@@ -34,35 +31,28 @@
       text-decoration: none;
       color: #0f172a;
       font-weight: 600;
-      transition: 0.2s;
     }
 
-    nav a:hover {
-      color: #0f766e;
-    }
+    nav a:hover { color: #0f766e; }
 
     .container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 30px 60px 30px;
-}
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 30px 60px 30px;
+    }
 
-.hero {
-  position: relative;
-
-  padding-top: 260px;
-  padding-bottom: 80px;
-
-  background-image:
-    linear-gradient(rgba(248,250,252,0.18), rgba(248,250,252,0.82)),
-    url('images/banner.png');
-
-  background-size: contain;
-  background-position: top center;
-  background-repeat: no-repeat;
-
-  border-radius: 0 0 28px 28px;
-}
+    .hero {
+      position: relative;
+      padding-top: 260px;
+      padding-bottom: 80px;
+      background-image:
+        linear-gradient(rgba(248,250,252,0.18), rgba(248,250,252,0.82)),
+        url('images/banner.png');
+      background-size: contain;
+      background-position: top center;
+      background-repeat: no-repeat;
+      border-radius: 0 0 28px 28px;
+    }
 
     h1 {
       font-size: 64px;
@@ -92,9 +82,7 @@
       max-width: 800px;
     }
 
-    section {
-      margin-top: 90px;
-    }
+    section { margin-top: 90px; }
 
     h2 {
       font-size: 38px;
@@ -103,11 +91,6 @@
     }
 
     p {
-      font-size: 18px;
-      color: #475569;
-    }
-
-    ul {
       font-size: 18px;
       color: #475569;
     }
@@ -133,8 +116,49 @@
       font-size: 22px;
     }
 
-    .card p {
-      font-size: 16px;
+    .card p { font-size: 16px; }
+
+    .highlight {
+      color: #0f766e;
+      font-weight: 600;
+    }
+
+    .profile-img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 0;
+      border: 2px solid #e2e8f0;
+    }
+
+    .organizer-top {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .organizer-info h3 { margin: 0; }
+
+    .organizer-info p {
+      margin-top: 6px;
+      margin-bottom: 0;
+    }
+
+    .committee-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .committee-grid div {
+      background: white;
+      padding: 18px 22px;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      font-size: 17px;
+      color: #475569;
     }
 
     footer {
@@ -144,75 +168,7 @@
       color: #64748b;
       border-top: 1px solid #e2e8f0;
     }
-
-.highlight {
-  color: #0f766e;
-  font-weight: 600;
-}
-
-.profile-img {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 0;
-  border: 2px solid #e2e8f0;
-}
-
-.organizer-top {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-.card a {
-  color: #0f766e;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.card a:hover {
-  text-decoration: underline;
-}
-
-.organizer-top {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.organizer-info h3 {
-  margin: 0;
-}
-
-.organizer-info p {
-  margin-top: 6px;
-  margin-bottom: 0;
-}
-
-.organizer-info p {
-  margin-top: 6px;
-  margin-bottom: 0;
-}
-
-.committee-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-  gap: 14px;
-  margin-top: 30px;
-}
-
-.committee-grid div {
-  background: white;
-  padding: 18px 22px;
-  border-radius: 10px;
-  border: 1px solid #e2e8f0;
-  font-size: 17px;
-  color: #475569;
-}
-
-</style>
-</style>
+  </style>
 </head>
 
 <body>
@@ -229,227 +185,108 @@
   <div class="container">
 
     <section id="home" class="hero">
-
       <h1>LR4Health 2026</h1>
-
-      <div class="tagline">
-        Longitudinal Reasoning Over Evolving Evidence
-      </div>
-
-      <div class="subtitle">
-        NeurIPS 2026 Workshop on Multimodal Clinical Decision Support and Healthcare AI
-      </div>
-
-      <div class="notice">
-        Workshop website under construction. Additional details, submission instructions, and schedule updates will be announced soon.
-      </div>
-
+      <div class="tagline">Longitudinal Reasoning Over Evolving Evidence</div>
+      <div class="subtitle">NeurIPS 2026 Workshop on Multimodal Clinical Decision Support and Healthcare AI</div>
+      <div class="notice">Workshop website under construction. Additional details, submission instructions, and schedule updates will be announced soon.</div>
     </section>
 
     <section id="about">
-
       <h2>About</h2>
+      <p>LR4Health focuses on longitudinal reasoning systems capable of integrating evolving multimodal clinical evidence across patient trajectories. The workshop brings together researchers working on multimodal reasoning, retrieval-grounded inference, uncertainty-aware clinical AI, deployment challenges, clinician supervision, and trustworthy healthcare AI systems.</p>
+      <p>The workshop emphasizes challenges involving temporal reasoning, calibration under distribution shift, evidence attribution, longitudinal decision support, and deployment of multimodal foundation models in real-world healthcare environments.</p>
+    </section>
 
-      <p>
-        LR4Health focuses on longitudinal reasoning systems capable of integrating evolving multimodal clinical evidence across patient trajectories. The workshop brings together researchers working on multimodal reasoning, retrieval-grounded inference, uncertainty-aware clinical AI, deployment challenges, clinician supervision, and trustworthy healthcare AI systems.
-      </p>
+    <section id="speakers">
+      <h2>Confirmed Speakers & Panelists</h2>
 
-      <p>
-        The workshop emphasizes challenges involving temporal reasoning, calibration under distribution shift, evidence attribution, longitudinal decision support, and deployment of multimodal foundation models in real-world healthcare environments.
-      </p>
-
-<section id="speakers">
-
-  <h2>Confirmed Speakers & Panelists</h2>
-
-  <div class="speaker-grid">
-
-    <div class="card">
-      <h3>Faisal Mahmood</h3>
-      <p>Harvard Medical School & Brigham and Women’s Hospital</p>
-    </div>
-
-    <div class="card">
-      <h3>Nigam Shah</h3>
-      <p>Stanford University & Stanford Health Care</p>
-    </div>
-
-    <div class="card">
-      <h3>Hoifung Poon</h3>
-      <p>Microsoft Health Futures & Microsoft Research</p>
-    </div>
-
-    <div class="card">
-      <h3>Greg Corrado</h3>
-      <p>Google Research & Google Health AI</p>
-    </div>
-
-    <div class="card">
-      <h3>Finale Doshi-Velez</h3>
-      <p>Harvard University</p>
-    </div>
-
-    <div class="card">
-      <h3>Mubarak Shah</h3>
-      <p>University of Central Florida</p>
-    </div>
-
-    <div class="card">
-      <h3>Mihaela van der Schaar</h3>
-      <p>University of Cambridge</p>
-    </div>
-
-    <div class="card">
-      <h3>Shekoofeh Azizi</h3>
-      <p>Google DeepMind</p>
-    </div>
-
-    <div class="card">
-      <h3>Michael Moor</h3>
-      <p>ETH Zurich</p>
-    </div>
-
-    <div class="card">
-      <h3>Jakob Nikolas Kather</h3>
-      <p>Technical University of Dresden</p>
-    </div>
-
-  </div>
-
-</section>
+      <div class="speaker-grid">
+        <div class="card"><h3>Faisal Mahmood</h3><p>Harvard Medical School & Brigham and Women’s Hospital</p></div>
+        <div class="card"><h3>Nigam Shah</h3><p>Stanford University & Stanford Health Care</p></div>
+        <div class="card"><h3>Hoifung Poon</h3><p>Microsoft Health Futures & Microsoft Research</p></div>
+        <div class="card"><h3>Greg Corrado</h3><p>Google Research & Google Health AI</p></div>
+        <div class="card"><h3>Finale Doshi-Velez</h3><p>Harvard University</p></div>
+        <div class="card"><h3>Mubarak Shah</h3><p>University of Central Florida</p></div>
+        <div class="card"><h3>Mihaela van der Schaar</h3><p>University of Cambridge</p></div>
+        <div class="card"><h3>Shekoofeh Azizi</h3><p>Google DeepMind</p></div>
+        <div class="card"><h3>Michael Moor</h3><p>ETH Zurich</p></div>
+        <div class="card"><h3>Jakob Nikolas Kather</h3><p>Technical University of Dresden</p></div>
+      </div>
+    </section>
 
     <section id="cfp">
-
       <h2>Call for Papers</h2>
+      <p>We invite submissions on longitudinal clinical reasoning, multimodal healthcare AI, retrieval-grounded inference, temporal reasoning systems, uncertainty-aware clinical decision support, healthcare foundation models, deployment studies, clinician-AI interaction, and trustworthy AI for healthcare.</p>
+      <p>Submission instructions and important dates will be announced soon.</p>
+    </section>
 
-      <p>
-        We invite submissions on longitudinal clinical reasoning, multimodal healthcare AI, retrieval-grounded inference, temporal reasoning systems, uncertainty-aware clinical decision support, healthcare foundation models, deployment studies, clinician-AI interaction, and trustworthy AI for healthcare.
-      </p>
+    <section id="organizers">
+      <h2>Organizers</h2>
 
-      <p>
-        Submission instructions and important dates will be announced soon.
-      </p>
-
-<section id="organizers">
-
-  <h2>Organizers</h2>
-
-  <div class="speaker-grid">
-
-    <a href="https://sites.google.com/view/aimindlab/home" target="_blank" style="text-decoration:none; color:inherit;">
-
-      <div class="card">
-
-        <div class="organizer-top">
-
-          <img src="images/pegah.jpeg" alt="Pegah Khosravi" class="profile-img">
-
-          <div class="organizer-info">
-
-            <h3>Pegah Khosravi</h3>
-
-            <p>University of Central Florida</p>
-
+      <div class="speaker-grid">
+        <a href="https://sites.google.com/view/aimindlab/home" target="_blank" style="text-decoration:none; color:inherit;">
+          <div class="card">
+            <div class="organizer-top">
+              <img src="images/pegah.jpeg" alt="Pegah Khosravi" class="profile-img">
+              <div class="organizer-info">
+                <h3>Pegah Khosravi</h3>
+                <p>University of Central Florida</p>
+              </div>
+            </div>
           </div>
+        </a>
 
-        </div>
-
+        <div class="card"><h3>Chen Chen</h3><p>University of Central Florida</p></div>
+        <div class="card"><h3>Chang Xu</h3><p>The University of Sydney</p></div>
+        <div class="card"><h3>Zongyuan Ge</h3><p>Monash University</p></div>
+        <div class="card"><h3>Hani Goodarzi</h3><p>Arc Institute</p></div>
+        <div class="card"><h3>Joseph Paul Cohen</h3><p>Amazon AWS Health AI</p></div>
+        <div class="card"><h3>Swetha Sirnam</h3><p>Amazon</p></div>
       </div>
+    </section>
 
-    </a>
+    <section id="committee">
+      <h2>Program Committee</h2>
 
-    <div class="card">
-      <h3>Chen Chen</h3>
-      <p>University of Central Florida</p>
-    </div>
+      <div class="committee-grid">
+        <div>Yu Tian — University of Central Florida</div>
+        <div>Jane S. Gibson — UCF College of Medicine</div>
+        <div>Yuzhang Shang — University of Central Florida</div>
+        <div>Song Wang — University of Central Florida</div>
+        <div>Iman Dehzangi — Rutgers University</div>
+        <div>Shahana Ibrahim — University of Central Florida</div>
+        <div>Lie Ju — University College London & Moorfields Eye Hospital</div>
+        <div>Michael McDonald — AdventHealth</div>
+        <div>Yukun Zhou — University College London & Moorfields Eye Hospital</div>
+        <div>Rami Vanguri — NYU Langone Health</div>
+        <div>Ignacio Vázquez-García — Massachusetts General Hospital, Harvard Medical School & Broad Institute</div>
+        <div>Ghulam Rasool — Moffitt Cancer Center</div>
+        <div>Tafadzwa L. Chaunzwa — Memorial Sloan Kettering Cancer Center</div>
+        <div>Ehsan Kazemi — Google</div>
+        <div>Anaïs Rameau — Weill Cornell Medical College</div>
+        <div>Rosa Aghdam — University of Wisconsin–Madison</div>
+        <div>Soheil Jahangiri — University Health Network</div>
+        <div>Yazdan Asgari — INSERM & Université Paris-Saclay</div>
+        <div>Ali Salehzadeh-Yazdi — Constructor University</div>
+        <div>Bahram Jafrasteh — Weill Cornell Medicine</div>
+      </div>
+    </section>
 
-    <div class="card">
-      <h3>Chang Xu</h3>
-      <p>The University of Sydney</p>
-    </div>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>For workshop inquiries, please contact:</p>
+      <p>
+        <span class="highlight">Pegah Khosravi</span><br>
+        University of Central Florida<br>
+        pegah.khosravi@ucf.edu
+      </p>
+    </section>
 
-    <div class="card">
-      <h3>Zongyuan Ge</h3>
-      <p>Monash University</p>
-    </div>
-
-    <div class="card">
-      <h3>Hani Goodarzi</h3>
-      <p>Arc Institute</p>
-    </div>
-
-    <div class="card">
-      <h3>Joseph Paul Cohen</h3>
-      <p>Amazon AWS Health AI</p>
-    </div>
-
-    <div class="card">
-      <h3>Swetha Sirnam</h3>
-      <p>Amazon</p>
-    </div>
+    <footer>
+      LR4Health 2026 • NeurIPS 2026 Workshop
+    </footer>
 
   </div>
-
-    <div class="card">
-      <h3>Swetha Sirnam</h3>
-      <p>Amazon</p>
-    </div>
-
-  </div>
-
-</section>
-
-<section id="committee">
-
-  <h2>Program Committee</h2>
-
-  <div class="committee-grid">
-    <div>Yu Tian — University of Central Florida</div>
-    <div>Jane S. Gibson — UCF College of Medicine</div>
-    <div>Yuzhang Shang — University of Central Florida</div>
-    <div>Song Wang — University of Central Florida</div>
-    <div>Iman Dehzangi — Rutgers University</div>
-    <div>Shahana Ibrahim — University of Central Florida</div>
-    <div>Lie Ju — University College London & Moorfields Eye Hospital</div>
-    <div>Michael McDonald — AdventHealth</div>
-    <div>Yukun Zhou — University College London & Moorfields Eye Hospital</div>
-    <div>Rami Vanguri — NYU Langone Health</div>
-    <div>Ignacio Vázquez-García — Massachusetts General Hospital, Harvard Medical School & Broad Institute</div>
-    <div>Ghulam Rasool — Moffitt Cancer Center</div>
-    <div>Tafadzwa L. Chaunzwa — Memorial Sloan Kettering Cancer Center</div>
-    <div>Ehsan Kazemi — Google</div>
-    <div>Anaïs Rameau — Weill Cornell Medical College</div>
-    <div>Rosa Aghdam — University of Wisconsin–Madison</div>
-    <div>Soheil Jahangiri — University Health Network</div>
-    <div>Yazdan Asgari — INSERM & Université Paris-Saclay</div>
-    <div>Ali Salehzadeh-Yazdi — Constructor University</div>
-    <div>Bahram Jafrasteh — Weill Cornell Medicine</div>
-  </div>
-
-</section>
-
-<section id="contact">
-
-  <h2>Contact</h2>
-
-  <p>
-    For workshop inquiries, please contact:
-  </p>
-
-  <p>
-    <span class="highlight">Pegah Khosravi</span><br>
-    University of Central Florida<br>
-    pegah.khosravi@ucf.edu
-  </p>
-
-</section>
-
-<footer>
-  LR4Health 2026 • NeurIPS 2026 Workshop
-</footer>
-
-</div>
 
 </body>
-
 </html>
