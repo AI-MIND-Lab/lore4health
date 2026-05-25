@@ -5,8 +5,7 @@
 # LoRe4Health
 ### NeurIPS 2026 Workshop on Longitudinal Reasoning Over Evolving Evidence for Healthcare
 
-Official workshop website:  
-https://ai-mind-lab.github.io/lore4health
+Official workshop website:  https://ai-mind-lab.github.io/lore4health
 
 ---
 
