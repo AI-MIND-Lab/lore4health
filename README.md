@@ -3,7 +3,7 @@
 </p>
 
 # LoRe4Health
-### NeurIPS 2026 Workshop on Longitudinal Reasoning Over Evolving Evidence for Healthcare AI
+### NeurIPS 2026 Workshop on Longitudinal Reasoning Over Evolving Evidence for Healthcare
 
 Official workshop website:  
 https://ai-mind-lab.github.io/lore4health
@@ -39,8 +39,3 @@ The workshop emphasizes reasoning over evolving evidence rather than isolated pr
 - Farah Shamout — NYU Abu Dhabi
 - Hani Goodarzi — Arc Institute
 
----
-
-## Website
-
-https://ai-mind-lab.github.io/lore4health
